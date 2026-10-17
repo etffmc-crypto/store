@@ -2,6 +2,7 @@
 
 Run: python _build.py   (files starting with _ are not served by GitHub Pages)
 """
+import html as htmllib
 import pathlib
 import re
 
@@ -62,16 +63,17 @@ TEMPLATE = """<!doctype html>
 
 def build():
     for name, path in PAGES.items():
-        src = (ROOT / "_pages" / f"{name}.html").read_text(encoding="utf-8")
+        src = (ROOT / "_pages" / f"{name}.html").read_text(encoding="utf-8").replace("\r\n", "\n")
         meta, body = src.split("\n---\n", 1)
         fields = dict(re.findall(r"^(\w+):\s*(.*)$", meta, re.M))
         up = "../" * path.count("/")
+        current = ' aria-current="page"'
         nav = "".join(
-            f'<a href="{up}{href}"{" aria-current=\"page\"" if href == path else ""}>{label}</a>'
+            f'<a href="{up}{href}"{current if href == path else ""}>{label}</a>'
             for href, label in NAV
         )
         html = TEMPLATE.format(
-            title=fields["title"], description=fields["description"], up=up, nav=nav,
+            title=htmllib.escape(fields["title"]), description=htmllib.escape(fields["description"]), up=up, nav=nav,
             body=body.replace("{up}", up).strip(),
         )
         out = ROOT / path / "index.html"
