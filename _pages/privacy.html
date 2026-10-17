@@ -1,0 +1,69 @@
+title: Privacy Policy | Flags Software
+description: Privacy Policy for Purple Party, DualForge and this website. No accounts, no analytics, no data sold.
+---
+<div class="legal">
+<h1>Privacy Policy</h1>
+<p class="meta">Effective 16 October 2026. Covers Purple Party, DualForge, their Pro plans and this website, all provided by Flags Software ("we", "us").</p>
+
+<h2>The short version</h2>
+<ul>
+  <li>Neither app has an account with us, analytics or telemetry. We run no server that receives your app data.</li>
+  <li>What the apps store stays on your PC.</li>
+  <li>The apps contact other services only for the features that need them, listed below.</li>
+  <li>We do not sell, rent or share personal information, and we do not run advertising.</li>
+  <li>If you buy Pro, Lemon Squeezy handles the payment and shares your order details with us.</li>
+</ul>
+
+<h2>1. Purple Party</h2>
+<h3>Stored on the streamer's PC</h3>
+<p>Everything Purple Party keeps is in the streamer's Windows profile, in <code>%APPDATA%\PurpleParty</code>. Nothing is uploaded to us.</p>
+<ul>
+  <li><strong>Settings:</strong> the dashboard port, the chosen camera and its size, the lens list (lens ids, titles, point costs, durations, Twitch reward ids), the streamer's Twitch login and user id, the remote mod access list (each mod's Twitch login and user id), the date and version of the streamer's acceptance of Snap's terms, and, with Pro, the license key and its last check.</li>
+  <li><strong>Secrets:</strong> the streamer's Twitch sign-in tokens and the hashes of mod sessions, encrypted with Windows Data Protection for the streamer's Windows account only.</li>
+  <li><strong>Audit log:</strong> one line per event. A redemption line holds the Twitch redemption id, the lens, the outcome and the redeeming viewer's Twitch login. A remote action line holds the mod's Twitch login, user id, a short session id and the network address the tunnel reported. It is kept until the streamer deletes it.</li>
+  <li><strong>Technical logs</strong> for support, with tokens removed. Files older than 7 days are deleted automatically when the app starts.</li>
+  <li><strong>Mod sessions</strong> last 30 days, or until the streamer unticks the mod. A mod's Twitch token is revoked right after the identity check and is never stored.</li>
+</ul>
+<h3>Sent to other services</h3>
+<ul>
+  <li><strong>Twitch:</strong> with the streamer's sign-in, the app creates and updates its channel point rewards, reads their redemptions, marks them fulfilled or refunded, and can read the channel's moderator list. A mod's remote sign-in uses Twitch only to confirm who they are. Twitch's privacy policy covers Twitch's side.</li>
+  <li><strong>Snap Camera Kit:</strong> lenses are rendered on the streamer's PC by Snap Camera Kit, which loads its runtime and the lens files from Snap's servers. Snap's software may report lens usage and performance statistics and browser details to Snap. We do not send Snap the camera video, the Twitch login or any viewer information. Snap's privacy policy (<a href="https://values.snap.com/privacy/privacy-policy">values.snap.com/privacy/privacy-policy</a>) covers Snap's side.</li>
+  <li><strong>Remote access for mods</strong> (off unless the streamer turns it on): the dashboard is reached through a tunnel service the streamer chooses, which handles that traffic under its own policy.</li>
+  <li><strong>Updates:</strong> installed copies check a public GitHub releases feed for new versions. GitHub sees your IP address, as with any download.</li>
+  <li><strong>Pro license:</strong> when a Pro key is pasted, the app sends the key and the PC's name to Lemon Squeezy's license service to activate it, then checks the key about once a day. Lemon Squeezy sees your IP address.</li>
+</ul>
+<p>Purple Party does not connect to Kick or YouTube today. Viewer data exists only in the audit log on the streamer's PC: the Twitch login that Twitch already shows with the redemption.</p>
+
+<h2>2. DualForge</h2>
+<h3>Stored on your PC</h3>
+<p>DualForge stores your profiles, settings, log files and crash dumps in <code>%APPDATA%\DualForge</code>. Crash dumps are written locally and never uploaded. Driver installers downloaded from the Health page are kept in <code>%TEMP%\DualForge</code> and cleaned up later. The Health page can export a diagnostics bundle, but only when you click Export; it may contain your Windows user name and device serial numbers, is saved on your PC, and is shared only if you choose to share it.</p>
+<h3>Sent to other services</h3>
+<ul>
+  <li><strong>Update checks</strong> are off unless you turn them on. When on, the app asks GitHub Releases for the latest release information, and downloads an update only after you click Download.</li>
+  <li><strong>Driver install:</strong> only when you use Install on the Health page, the app asks GitHub for the driver's release information and, after you click Install, downloads the installer from GitHub.</li>
+  <li><strong>Pro license:</strong> when you activate a Pro key, the app sends the key and the PC's name to Lemon Squeezy's license service, and checks it again from time to time. Lemon Squeezy sees your IP address.</li>
+</ul>
+<p>GitHub sees your IP address, browser or app details and the files requested, under the GitHub privacy statement. Apart from the above, DualForge sends nothing to us or anyone else.</p>
+
+<h2>3. Buying Pro</h2>
+<p>Pro plans are sold by Lemon Squeezy as Merchant of Record. Lemon Squeezy collects your name, email address, billing details and tax information, processes your payment, and sends your receipt and license key. We never receive or store your card details. Lemon Squeezy shares the order details with us, such as your email address, the product, the order and the license key, so we can support your purchase. Lemon Squeezy's handling of your data is covered by its own privacy policy at <a href="https://www.lemonsqueezy.com/privacy">lemonsqueezy.com/privacy</a>. We and Lemon Squeezy keep order records for as long as tax and accounting rules require.</p>
+
+<h2>4. Support requests</h2>
+<p>Support requests are made on GitHub and are public. We keep the conversation there to help you. Please do not post license keys or other private details.</p>
+
+<h2>5. This website</h2>
+<p>This site is hosted on GitHub Pages. As the host, GitHub may log visitors' IP addresses and request details under its own policies. The site sets no cookies, has no analytics or advertising, and loads no fonts or scripts from other sites.</p>
+
+<h2>6. Your choices and rights</h2>
+<ul>
+  <li>Purple Party: uninstall it and delete <code>%APPDATA%\PurpleParty</code>. Mods: ask the streamer to untick you. Viewers: your lines are in the streamer's audit log; ask the streamer.</li>
+  <li>DualForge: uninstall it and delete <code>%APPDATA%\DualForge</code>.</li>
+  <li>Purchases: ask us or Lemon Squeezy for a copy of, or the deletion of, your order data, subject to what tax law requires us to keep. Depending on where you live, you may have further rights to access, correct or delete your data.</li>
+</ul>
+
+<h2>7. Children</h2>
+<p>The apps are not aimed at children under 13, and we do not knowingly collect data from them. Twitch requires its users to be 13 or older.</p>
+
+<h2>8. Changes and contact</h2>
+<p>If an app starts sending data somewhere new, this policy is updated before that ships. Changes are dated at the top. Questions: see the <a href="../#contact">contact section</a>.</p>
+</div>
